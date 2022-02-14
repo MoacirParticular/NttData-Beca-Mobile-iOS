@@ -17,26 +17,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="204" id="vQe-Nk-xCF">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="204"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="150" id="vQe-Nk-xCF" customClass="PosterTableViewCell" customModule="Movies" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vQe-Nk-xCF" id="czX-za-9dw">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="204"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="USd-2a-phf">
-                                            <rect key="frame" x="0.0" y="3" width="187" height="201"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wuM-Xy-QR6">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="150" id="3E5-oR-o3H"/>
+                                            </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Titulo Filme" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wuO-Xv-dTl">
-                                            <rect key="frame" x="195" y="88" width="162" height="28"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Texto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGr-MU-ItF">
+                                            <rect key="frame" x="165" y="64" width="229" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="229" id="2Lg-rN-nW5"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="wuM-Xy-QR6" firstAttribute="top" secondItem="czX-za-9dw" secondAttribute="top" id="Jjv-Ms-H0L"/>
+                                        <constraint firstItem="WGr-MU-ItF" firstAttribute="trailing" secondItem="czX-za-9dw" secondAttribute="trailingMargin" id="OQC-ad-65v"/>
+                                        <constraint firstItem="wuM-Xy-QR6" firstAttribute="leading" secondItem="czX-za-9dw" secondAttribute="leading" id="XMF-4g-aQD"/>
+                                        <constraint firstItem="WGr-MU-ItF" firstAttribute="top" secondItem="czX-za-9dw" secondAttribute="topMargin" constant="53" id="Y4S-57-mRM"/>
+                                        <constraint firstItem="WGr-MU-ItF" firstAttribute="centerY" secondItem="wuM-Xy-QR6" secondAttribute="centerY" id="YMV-IL-hRz"/>
+                                        <constraint firstItem="WGr-MU-ItF" firstAttribute="leading" secondItem="wuM-Xy-QR6" secondAttribute="trailing" constant="15" id="a8r-Pv-J25"/>
+                                        <constraint firstAttribute="bottom" secondItem="wuM-Xy-QR6" secondAttribute="bottom" id="hUw-p9-6Vs"/>
+                                        <constraint firstItem="WGr-MU-ItF" firstAttribute="leading" secondItem="wuM-Xy-QR6" secondAttribute="trailing" constant="15" id="rGV-DG-hJ8"/>
+                                        <constraint firstAttribute="trailing" secondItem="wuM-Xy-QR6" secondAttribute="trailing" constant="264" id="tv3-fo-EzI"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="titulolabel" destination="WGr-MU-ItF" id="Cgl-LA-hp6"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
