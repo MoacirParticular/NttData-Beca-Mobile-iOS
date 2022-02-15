@@ -13,7 +13,6 @@
 		34CC14E527BAA77600F9C256 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34CC14E327BAA77600F9C256 /* Main.storyboard */; };
 		34CC14E727BAA77800F9C256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34CC14E627BAA77800F9C256 /* Assets.xcassets */; };
 		34CC14EA27BAA77800F9C256 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34CC14E827BAA77800F9C256 /* LaunchScreen.storyboard */; };
-		34CC150127BC066D00F9C256 /* Teste.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 34CC150027BC066D00F9C256 /* Teste.rtf */; };
 		C8B09AC0963DD38D4A6A6477 /* Pods_BecaWeekMovies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F231A14617BE9884640D9007 /* Pods_BecaWeekMovies.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +25,6 @@
 		34CC14E627BAA77800F9C256 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34CC14E927BAA77800F9C256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34CC14EB27BAA77800F9C256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		34CC150027BC066D00F9C256 /* Teste.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Teste.rtf; sourceTree = "<group>"; };
 		9BC765DE89BF9699059061BC /* Pods-BecaWeekMovies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BecaWeekMovies.debug.xcconfig"; path = "Target Support Files/Pods-BecaWeekMovies/Pods-BecaWeekMovies.debug.xcconfig"; sourceTree = "<group>"; };
 		D8DDD7F50B5EA3E5D1138D37 /* Pods-BecaWeekMovies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BecaWeekMovies.release.xcconfig"; path = "Target Support Files/Pods-BecaWeekMovies/Pods-BecaWeekMovies.release.xcconfig"; sourceTree = "<group>"; };
 		F231A14617BE9884640D9007 /* Pods_BecaWeekMovies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BecaWeekMovies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,7 +67,6 @@
 				34CC14E127BAA77600F9C256 /* ViewController.swift */,
 				34CC14DD27BAA77600F9C256 /* AppDelegate.swift */,
 				34CC14DF27BAA77600F9C256 /* SceneDelegate.swift */,
-				34CC150027BC066D00F9C256 /* Teste.rtf */,
 				34CC14E627BAA77800F9C256 /* Assets.xcassets */,
 				34CC14E827BAA77800F9C256 /* LaunchScreen.storyboard */,
 				34CC14EB27BAA77800F9C256 /* Info.plist */,
@@ -154,7 +151,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34CC150127BC066D00F9C256 /* Teste.rtf in Resources */,
 				34CC14EA27BAA77800F9C256 /* LaunchScreen.storyboard in Resources */,
 				34CC14E727BAA77800F9C256 /* Assets.xcassets in Resources */,
 				34CC14E527BAA77600F9C256 /* Main.storyboard in Resources */,
