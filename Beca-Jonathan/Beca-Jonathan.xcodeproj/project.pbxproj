@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92305B5F27BBD3BD00E164AD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92305B5E27BBD3BD00E164AD /* Model.swift */; };
+		92305B6127BBD93500E164AD /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92305B6027BBD93500E164AD /* API.swift */; };
+		92305B6327BBDB3E00E164AD /* tableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92305B6227BBDB3E00E164AD /* tableViewDataSource.swift */; };
+		92305B6527BBE08700E164AD /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92305B6427BBE08700E164AD /* Delegate.swift */; };
+		92305B6727BBE0F400E164AD /* MoviesTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92305B6627BBE0F400E164AD /* MoviesTextFieldDelegate.swift */; };
+		92305B6927BBE1CE00E164AD /* DetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92305B6827BBE1CE00E164AD /* DetailsTableViewController.swift */; };
+		92305B6B27BBE78E00E164AD /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92305B6A27BBE78E00E164AD /* MoviesViewController.swift */; };
 		9265B7D127BAB75500D19357 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9265B7D027BAB75500D19357 /* AppDelegate.swift */; };
 		9265B7D327BAB75500D19357 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9265B7D227BAB75500D19357 /* SceneDelegate.swift */; };
 		9265B7D527BAB75500D19357 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9265B7D427BAB75500D19357 /* ViewController.swift */; };
@@ -14,9 +21,18 @@
 		9265B7DB27BAB75500D19357 /* Beca_Jonathan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9265B7D927BAB75500D19357 /* Beca_Jonathan.xcdatamodeld */; };
 		9265B7DD27BAB75900D19357 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9265B7DC27BAB75900D19357 /* Assets.xcassets */; };
 		9265B7E027BAB75900D19357 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9265B7DE27BAB75900D19357 /* LaunchScreen.storyboard */; };
+		E3F1A59615C813351BB1809B /* Pods_Beca_Jonathan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F1B68FB3C42EDD7502B7FB /* Pods_Beca_Jonathan.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D240C428A298D6239C21E50 /* Pods-Beca-Jonathan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beca-Jonathan.debug.xcconfig"; path = "Target Support Files/Pods-Beca-Jonathan/Pods-Beca-Jonathan.debug.xcconfig"; sourceTree = "<group>"; };
+		92305B5E27BBD3BD00E164AD /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		92305B6027BBD93500E164AD /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		92305B6227BBDB3E00E164AD /* tableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewDataSource.swift; sourceTree = "<group>"; };
+		92305B6427BBE08700E164AD /* Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegate.swift; sourceTree = "<group>"; };
+		92305B6627BBE0F400E164AD /* MoviesTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTextFieldDelegate.swift; sourceTree = "<group>"; };
+		92305B6827BBE1CE00E164AD /* DetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewController.swift; sourceTree = "<group>"; };
+		92305B6A27BBE78E00E164AD /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		9265B7CD27BAB75500D19357 /* Beca-Jonathan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beca-Jonathan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9265B7D027BAB75500D19357 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9265B7D227BAB75500D19357 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +42,8 @@
 		9265B7DC27BAB75900D19357 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9265B7DF27BAB75900D19357 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9265B7E127BAB75900D19357 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7F1B68FB3C42EDD7502B7FB /* Pods_Beca_Jonathan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beca_Jonathan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3DD7E038AA5AA2611B1DB57 /* Pods-Beca-Jonathan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beca-Jonathan.release.xcconfig"; path = "Target Support Files/Pods-Beca-Jonathan/Pods-Beca-Jonathan.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +51,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3F1A59615C813351BB1809B /* Pods_Beca_Jonathan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		306A25B0371273521A9FF5E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D240C428A298D6239C21E50 /* Pods-Beca-Jonathan.debug.xcconfig */,
+				F3DD7E038AA5AA2611B1DB57 /* Pods-Beca-Jonathan.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9265B7C427BAB75500D19357 = {
 			isa = PBXGroup;
 			children = (
 				9265B7CF27BAB75500D19357 /* Beca-Jonathan */,
 				9265B7CE27BAB75500D19357 /* Products */,
+				306A25B0371273521A9FF5E2 /* Pods */,
+				D3479264311BF12B3C01B8A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +92,13 @@
 				9265B7D027BAB75500D19357 /* AppDelegate.swift */,
 				9265B7D227BAB75500D19357 /* SceneDelegate.swift */,
 				9265B7D427BAB75500D19357 /* ViewController.swift */,
+				92305B5E27BBD3BD00E164AD /* Model.swift */,
+				92305B6027BBD93500E164AD /* API.swift */,
+				92305B6227BBDB3E00E164AD /* tableViewDataSource.swift */,
+				92305B6427BBE08700E164AD /* Delegate.swift */,
+				92305B6627BBE0F400E164AD /* MoviesTextFieldDelegate.swift */,
+				92305B6827BBE1CE00E164AD /* DetailsTableViewController.swift */,
+				92305B6A27BBE78E00E164AD /* MoviesViewController.swift */,
 				9265B7D627BAB75500D19357 /* Main.storyboard */,
 				9265B7DC27BAB75900D19357 /* Assets.xcassets */,
 				9265B7DE27BAB75900D19357 /* LaunchScreen.storyboard */,
@@ -70,6 +108,14 @@
 			path = "Beca-Jonathan";
 			sourceTree = "<group>";
 		};
+		D3479264311BF12B3C01B8A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7F1B68FB3C42EDD7502B7FB /* Pods_Beca_Jonathan.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +123,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9265B7E427BAB75900D19357 /* Build configuration list for PBXNativeTarget "Beca-Jonathan" */;
 			buildPhases = (
+				C37477D17BE7475A0DDE8891 /* [CP] Check Pods Manifest.lock */,
 				9265B7C927BAB75500D19357 /* Sources */,
 				9265B7CA27BAB75500D19357 /* Frameworks */,
 				9265B7CB27BAB75500D19357 /* Resources */,
+				8450B0D2317427144E010507 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,14 +184,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8450B0D2317427144E010507 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Beca-Jonathan/Pods-Beca-Jonathan-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Beca-Jonathan/Pods-Beca-Jonathan-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Beca-Jonathan/Pods-Beca-Jonathan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C37477D17BE7475A0DDE8891 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Beca-Jonathan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9265B7C927BAB75500D19357 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92305B6B27BBE78E00E164AD /* MoviesViewController.swift in Sources */,
+				92305B5F27BBD3BD00E164AD /* Model.swift in Sources */,
 				9265B7D527BAB75500D19357 /* ViewController.swift in Sources */,
+				92305B6727BBE0F400E164AD /* MoviesTextFieldDelegate.swift in Sources */,
 				9265B7D127BAB75500D19357 /* AppDelegate.swift in Sources */,
 				9265B7D327BAB75500D19357 /* SceneDelegate.swift in Sources */,
+				92305B6527BBE08700E164AD /* Delegate.swift in Sources */,
+				92305B6927BBE1CE00E164AD /* DetailsTableViewController.swift in Sources */,
+				92305B6127BBD93500E164AD /* API.swift in Sources */,
+				92305B6327BBDB3E00E164AD /* tableViewDataSource.swift in Sources */,
 				9265B7DB27BAB75500D19357 /* Beca_Jonathan.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +385,7 @@
 		};
 		9265B7E527BAB75900D19357 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D240C428A298D6239C21E50 /* Pods-Beca-Jonathan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,6 +413,7 @@
 		};
 		9265B7E627BAB75900D19357 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3DD7E038AA5AA2611B1DB57 /* Pods-Beca-Jonathan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
