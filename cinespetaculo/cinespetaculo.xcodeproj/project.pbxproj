@@ -37,6 +37,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8237BCCA27BC0CE000B62B54 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8237BCCB27BC0CEA00B62B54 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				82D6359C27BAD4F200F1F63C /* Main.storyboard */,
+				82D635A127BAD4F400F1F63C /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8237BCCC27BC0CFA00B62B54 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				82D6359A27BAD4F200F1F63C /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8237BCCD27BC0E3B00B62B54 /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				82D6359827BAD4F200F1F63C /* SceneDelegate.swift */,
+				82D6359627BAD4F200F1F63C /* AppDelegate.swift */,
+			);
+			path = "Application Delegate";
+			sourceTree = "<group>";
+		};
+		8237BCCE27BC0F3300B62B54 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				82D635A427BAD4F400F1F63C /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8237BCCF27BC0F7200B62B54 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				82D6359F27BAD4F400F1F63C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		82D6358A27BAD4F200F1F63C = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +105,12 @@
 		82D6359527BAD4F200F1F63C /* cinespetaculo */ = {
 			isa = PBXGroup;
 			children = (
-				82D6359627BAD4F200F1F63C /* AppDelegate.swift */,
-				82D6359827BAD4F200F1F63C /* SceneDelegate.swift */,
-				82D6359A27BAD4F200F1F63C /* ViewController.swift */,
-				82D6359C27BAD4F200F1F63C /* Main.storyboard */,
-				82D6359F27BAD4F400F1F63C /* Assets.xcassets */,
-				82D635A127BAD4F400F1F63C /* LaunchScreen.storyboard */,
-				82D635A427BAD4F400F1F63C /* Info.plist */,
+				8237BCCA27BC0CE000B62B54 /* Model */,
+				8237BCCB27BC0CEA00B62B54 /* View */,
+				8237BCCC27BC0CFA00B62B54 /* Controller */,
+				8237BCCD27BC0E3B00B62B54 /* Application Delegate */,
+				8237BCCE27BC0F3300B62B54 /* Supporting Files */,
+				8237BCCF27BC0F7200B62B54 /* Resources */,
 			);
 			path = cinespetaculo;
 			sourceTree = "<group>";
