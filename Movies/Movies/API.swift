@@ -16,18 +16,19 @@ class API{
 
   class func loadMovies(onComplete: @escaping (Welcome?) -> Void){
    
-    Alamofire.request(caminho, method: .get).responseJSON{ (response) in
+    Alamofire.request(caminho).responseJSON{ (response) in
       
       //guard let data = response.result.value else {return}
       guard let data = response.data else {return}
       guard let movieInfo = try? JSONDecoder().decode(Welcome.self, from: data)
-      
       else{
         onComplete(nil)
         return
       }
       onComplete(movieInfo)
+      
     }
+    
   }
   
 

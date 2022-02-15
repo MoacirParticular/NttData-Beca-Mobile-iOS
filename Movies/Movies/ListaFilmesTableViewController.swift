@@ -33,7 +33,7 @@ class ListaFilmesTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PosterTableViewCell
-        cell.teste(result: list[indexPath.row])
+        cell.preencheViews(result: list[indexPath.row])
         return cell
     }
   
