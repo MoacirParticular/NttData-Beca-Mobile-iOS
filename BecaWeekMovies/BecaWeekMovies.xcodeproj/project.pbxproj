@@ -13,7 +13,9 @@
 		34CC14E527BAA77600F9C256 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34CC14E327BAA77600F9C256 /* Main.storyboard */; };
 		34CC14E727BAA77800F9C256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34CC14E627BAA77800F9C256 /* Assets.xcassets */; };
 		34CC14EA27BAA77800F9C256 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34CC14E827BAA77800F9C256 /* LaunchScreen.storyboard */; };
-		C8B09AC0963DD38D4A6A6477 /* Pods_BecaWeekMovies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F231A14617BE9884640D9007 /* Pods_BecaWeekMovies.framework */; };
+		34CC150527BC1A9700F9C256 /* HomeTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34CC150427BC1A9700F9C256 /* HomeTableViewHeader.xib */; };
+		34CC150727BC1ED400F9C256 /* HomeTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CC150627BC1ED400F9C256 /* HomeTableViewHeader.swift */; };
+		AE242DBD679EF472A166DA57 /* Pods_BecaWeekMovies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32529F8B017EFAC870DE7E5 /* Pods_BecaWeekMovies.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +27,11 @@
 		34CC14E627BAA77800F9C256 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34CC14E927BAA77800F9C256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34CC14EB27BAA77800F9C256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9BC765DE89BF9699059061BC /* Pods-BecaWeekMovies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BecaWeekMovies.debug.xcconfig"; path = "Target Support Files/Pods-BecaWeekMovies/Pods-BecaWeekMovies.debug.xcconfig"; sourceTree = "<group>"; };
-		D8DDD7F50B5EA3E5D1138D37 /* Pods-BecaWeekMovies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BecaWeekMovies.release.xcconfig"; path = "Target Support Files/Pods-BecaWeekMovies/Pods-BecaWeekMovies.release.xcconfig"; sourceTree = "<group>"; };
-		F231A14617BE9884640D9007 /* Pods_BecaWeekMovies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BecaWeekMovies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34CC150427BC1A9700F9C256 /* HomeTableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewHeader.xib; sourceTree = "<group>"; };
+		34CC150627BC1ED400F9C256 /* HomeTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewHeader.swift; sourceTree = "<group>"; };
+		A3A0EA5A3308B5AA2A9FA683 /* Pods-BecaWeekMovies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BecaWeekMovies.release.xcconfig"; path = "Target Support Files/Pods-BecaWeekMovies/Pods-BecaWeekMovies.release.xcconfig"; sourceTree = "<group>"; };
+		B32529F8B017EFAC870DE7E5 /* Pods_BecaWeekMovies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BecaWeekMovies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBC52EB2DBD4A00D111CCFA3 /* Pods-BecaWeekMovies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BecaWeekMovies.debug.xcconfig"; path = "Target Support Files/Pods-BecaWeekMovies/Pods-BecaWeekMovies.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8B09AC0963DD38D4A6A6477 /* Pods_BecaWeekMovies.framework in Frameworks */,
+				AE242DBD679EF472A166DA57 /* Pods_BecaWeekMovies.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,7 +52,7 @@
 				34CC14DC27BAA77600F9C256 /* BecaWeekMovies */,
 				34CC14DB27BAA77600F9C256 /* Products */,
 				F64BEFC0FF754263CCCDC4FA /* Pods */,
-				A99E575FDDBF379DF36605CB /* Frameworks */,
+				E8F2429278C3B377566D3180 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,14 +74,16 @@
 				34CC14E627BAA77800F9C256 /* Assets.xcassets */,
 				34CC14E827BAA77800F9C256 /* LaunchScreen.storyboard */,
 				34CC14EB27BAA77800F9C256 /* Info.plist */,
+				34CC150427BC1A9700F9C256 /* HomeTableViewHeader.xib */,
+				34CC150627BC1ED400F9C256 /* HomeTableViewHeader.swift */,
 			);
 			path = BecaWeekMovies;
 			sourceTree = "<group>";
 		};
-		A99E575FDDBF379DF36605CB /* Frameworks */ = {
+		E8F2429278C3B377566D3180 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F231A14617BE9884640D9007 /* Pods_BecaWeekMovies.framework */,
+				B32529F8B017EFAC870DE7E5 /* Pods_BecaWeekMovies.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -85,8 +91,8 @@
 		F64BEFC0FF754263CCCDC4FA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9BC765DE89BF9699059061BC /* Pods-BecaWeekMovies.debug.xcconfig */,
-				D8DDD7F50B5EA3E5D1138D37 /* Pods-BecaWeekMovies.release.xcconfig */,
+				BBC52EB2DBD4A00D111CCFA3 /* Pods-BecaWeekMovies.debug.xcconfig */,
+				A3A0EA5A3308B5AA2A9FA683 /* Pods-BecaWeekMovies.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -98,11 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 34CC14EE27BAA77800F9C256 /* Build configuration list for PBXNativeTarget "BecaWeekMovies" */;
 			buildPhases = (
-				0A2EFC32364993D8691C7CEB /* [CP] Check Pods Manifest.lock */,
+				7D4DCF5F29CD14EB48A3D7F9 /* [CP] Check Pods Manifest.lock */,
 				34CC14D627BAA77600F9C256 /* Sources */,
 				34CC14D727BAA77600F9C256 /* Frameworks */,
 				34CC14D827BAA77600F9C256 /* Resources */,
-				E226B96919666E5B4A420F72 /* [CP] Embed Pods Frameworks */,
+				042CFA03208ACF35F4F459EC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34CC14EA27BAA77800F9C256 /* LaunchScreen.storyboard in Resources */,
+				34CC150527BC1A9700F9C256 /* HomeTableViewHeader.xib in Resources */,
 				34CC14E727BAA77800F9C256 /* Assets.xcassets in Resources */,
 				34CC14E527BAA77600F9C256 /* Main.storyboard in Resources */,
 			);
@@ -160,7 +167,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0A2EFC32364993D8691C7CEB /* [CP] Check Pods Manifest.lock */ = {
+		042CFA03208ACF35F4F459EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BecaWeekMovies/Pods-BecaWeekMovies-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BecaWeekMovies/Pods-BecaWeekMovies-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BecaWeekMovies/Pods-BecaWeekMovies-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D4DCF5F29CD14EB48A3D7F9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -182,23 +206,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E226B96919666E5B4A420F72 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BecaWeekMovies/Pods-BecaWeekMovies-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BecaWeekMovies/Pods-BecaWeekMovies-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BecaWeekMovies/Pods-BecaWeekMovies-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -207,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34CC14E227BAA77600F9C256 /* ViewController.swift in Sources */,
+				34CC150727BC1ED400F9C256 /* HomeTableViewHeader.swift in Sources */,
 				34CC14DE27BAA77600F9C256 /* AppDelegate.swift in Sources */,
 				34CC14E027BAA77600F9C256 /* SceneDelegate.swift in Sources */,
 			);
@@ -352,7 +360,7 @@
 		};
 		34CC14EF27BAA77800F9C256 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9BC765DE89BF9699059061BC /* Pods-BecaWeekMovies.debug.xcconfig */;
+			baseConfigurationReference = BBC52EB2DBD4A00D111CCFA3 /* Pods-BecaWeekMovies.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -381,7 +389,7 @@
 		};
 		34CC14F027BAA77800F9C256 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D8DDD7F50B5EA3E5D1138D37 /* Pods-BecaWeekMovies.release.xcconfig */;
+			baseConfigurationReference = A3A0EA5A3308B5AA2A9FA683 /* Pods-BecaWeekMovies.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
