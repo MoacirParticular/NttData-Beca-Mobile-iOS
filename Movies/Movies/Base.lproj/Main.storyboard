@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Filmes Da Semana-->
         <scene sceneID="dAl-7e-jY2">
             <objects>
                 <tableViewController id="Uwz-hJ-bkA" customClass="ListaFilmesTableViewController" customModule="Movies" customModuleProvider="target" sceneMemberID="viewController">
@@ -31,13 +31,13 @@
                                                 <constraint firstAttribute="height" constant="150" id="zUH-wC-IYO"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Texto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGr-MU-ItF">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Texto" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGr-MU-ItF">
                                             <rect key="frame" x="165" y="64" width="229" height="22"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="22" id="Mp9-ZQ-Pc2"/>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="229" id="zpk-Wv-1rb"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -53,6 +53,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="titulolabel" destination="WGr-MU-ItF" id="Cgl-LA-hp6"/>
+                                    <segue destination="B9B-dD-UQB" kind="show" id="Pfz-3o-88A"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -61,7 +62,7 @@
                             <outlet property="delegate" destination="Uwz-hJ-bkA" id="HiG-TE-KFr"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="U5r-1a-K9S"/>
+                    <navigationItem key="navigationItem" title="Filmes Da Semana" id="U5r-1a-K9S"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M6G-Rr-tAl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -75,10 +76,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="woA-fE-WdU" userLabel="capa">
-                                <rect key="frame" x="35" y="68" width="345" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Título" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iug-Hm-5iO">
                                 <rect key="frame" x="35" y="326" width="345" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -100,10 +97,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="woA-fE-WdU" userLabel="capa">
+                                <rect key="frame" x="35" y="88" width="345" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="deN-sR-k7K"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="KJl-76-vyf"/>
                     <connections>
                         <outlet property="rating" destination="2hF-O2-HgL" id="fvN-CL-3eM"/>
                         <outlet property="sinopse" destination="gLe-pe-b5X" id="h9g-xf-Np8"/>

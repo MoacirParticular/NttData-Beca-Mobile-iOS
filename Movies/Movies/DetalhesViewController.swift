@@ -9,6 +9,9 @@ import UIKit
 
 class DetalhesViewController: UIViewController {
 
+  var movie: Result!
+  
+  
   @IBOutlet weak var titulo: UILabel!
   @IBOutlet weak var rating: UILabel!
   @IBOutlet weak var sinopse: UILabel!
@@ -16,7 +19,7 @@ class DetalhesViewController: UIViewController {
   
     override func viewDidLoad() {
         super.viewDidLoad()
-
+      titulo.text = movie.title
         
     }
     

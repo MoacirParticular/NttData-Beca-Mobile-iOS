@@ -29,11 +29,19 @@ class ListaFilmesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
       return list.count
     }
-
+  
+  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    let controller = segue.destination as! DetalhesViewController
+    let selectedRow = list[tableView.indexPathForSelectedRow!.row]
+    controller.movie = selectedRow
+  }
+  
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PosterTableViewCell
-        cell.preencheViews(result: list[indexPath.row])
+        let movie = list[indexPath.row]
+      cell.preencheViews(result: movie)
         return cell
     }
   
@@ -41,7 +49,9 @@ class ListaFilmesTableViewController: UITableViewController {
       API.loadMovies { (info) in
         if let info = info{
           self.list += info.results
-          print(self.list.count)
+          DispatchQueue.main.async {
+            self.tableView.reloadData()
+          }
         }
       }
     }
