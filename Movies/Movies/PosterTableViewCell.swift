@@ -23,8 +23,8 @@ class PosterTableViewCell: UITableViewCell {
         
     }
   
-  func teste(){
-    titulolabel.text = "Aos poucos está dando certo"
+  func teste(result: Result){
+    titulolabel.text = result.title
   }
 
 }

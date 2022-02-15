@@ -6,12 +6,17 @@
 //
 
 import UIKit
+import Alamofire
 
 class ListaFilmesTableViewController: UITableViewController {
 
+  var list: [Result] = []
+  
+  
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        loadData()
+  
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -22,17 +27,27 @@ class ListaFilmesTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+      return list.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PosterTableViewCell
-        cell.teste()
+        cell.teste(result: list[indexPath.row])
         return cell
     }
-    
-
+  
+    func loadData(){
+      API.loadMovies { (info) in
+        if let info = info{
+          self.list += info.results
+          print(self.list.count)
+        }
+      }
+    }
+  
+  
+  
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
