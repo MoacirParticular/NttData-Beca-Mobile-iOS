@@ -9,6 +9,13 @@ import UIKit
 
 class HomeTableViewHeader: UIView {
 
-
+    // MARK: - IBOutlet
+    
+    @IBOutlet weak var tituloLabel: UILabel!
+    @IBOutlet weak var subtituloLabel: UILabel!
+    @IBOutlet weak var headerImageView: UIImageView!
+    
+    // n coloquei 
+    
 
 }

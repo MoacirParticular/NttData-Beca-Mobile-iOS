@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         filmesTableView.dataSource = self
         filmesTableView.delegate = self
         
+        view.backgroundColor = UIColor (red: 184.0/255.0, green: 246.0/255.0, blue: 223.0/255.0, alpha: 1) // HOME T V H?
     }
 }
 
