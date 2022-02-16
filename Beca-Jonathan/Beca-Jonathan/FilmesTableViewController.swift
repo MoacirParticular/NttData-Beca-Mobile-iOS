@@ -13,7 +13,7 @@ class FilmesTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        recebeDadosApi()
+        recebeDadosApi() //chama o metodo da classe API e preenche dadosFilmes
     }
 
     // MARK: - Table view data source
@@ -41,5 +41,12 @@ class FilmesTableViewController: UITableViewController {
         })
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let detalhesController = segue.destination as! DetalhesFilmesViewController
+        guard let indexPath = tableView.indexPathForSelectedRow else {return}
+        let indiceCelula = indexPath.row
+        detalhesController.atributos = dadosFilmes[indiceCelula]
+        
+    }
 
 }

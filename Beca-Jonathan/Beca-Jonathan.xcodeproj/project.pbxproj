@@ -17,6 +17,7 @@
 		92C0228E27BC207400E4DBD0 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C0228D27BC207400E4DBD0 /* Movies.swift */; };
 		92FA4D1D27BD5A2A0083EF08 /* FilmesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FA4D1C27BD5A2A0083EF08 /* FilmesTableViewController.swift */; };
 		92FA4D1F27BD5C480083EF08 /* ImagemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FA4D1E27BD5C480083EF08 /* ImagemTableViewCell.swift */; };
+		92FA4D2127BD76710083EF08 /* DetalhesFilmesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FA4D2027BD76710083EF08 /* DetalhesFilmesViewController.swift */; };
 		E3F1A59615C813351BB1809B /* Pods_Beca_Jonathan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F1B68FB3C42EDD7502B7FB /* Pods_Beca_Jonathan.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		92C0228D27BC207400E4DBD0 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
 		92FA4D1C27BD5A2A0083EF08 /* FilmesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmesTableViewController.swift; sourceTree = "<group>"; };
 		92FA4D1E27BD5C480083EF08 /* ImagemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagemTableViewCell.swift; sourceTree = "<group>"; };
+		92FA4D2027BD76710083EF08 /* DetalhesFilmesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesFilmesViewController.swift; sourceTree = "<group>"; };
 		D7F1B68FB3C42EDD7502B7FB /* Pods_Beca_Jonathan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beca_Jonathan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3DD7E038AA5AA2611B1DB57 /* Pods-Beca-Jonathan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beca-Jonathan.release.xcconfig"; path = "Target Support Files/Pods-Beca-Jonathan/Pods-Beca-Jonathan.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +93,7 @@
 				9265B7D927BAB75500D19357 /* Beca_Jonathan.xcdatamodeld */,
 				92FA4D1C27BD5A2A0083EF08 /* FilmesTableViewController.swift */,
 				92FA4D1E27BD5C480083EF08 /* ImagemTableViewCell.swift */,
+				92FA4D2027BD76710083EF08 /* DetalhesFilmesViewController.swift */,
 			);
 			path = "Beca-Jonathan";
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				9265B7D327BAB75500D19357 /* SceneDelegate.swift in Sources */,
 				92305B6127BBD93500E164AD /* API.swift in Sources */,
 				9265B7DB27BAB75500D19357 /* Beca_Jonathan.xcdatamodeld in Sources */,
+				92FA4D2127BD76710083EF08 /* DetalhesFilmesViewController.swift in Sources */,
 				92FA4D1F27BD5C480083EF08 /* ImagemTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
