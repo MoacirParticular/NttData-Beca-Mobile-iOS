@@ -6,6 +6,6 @@ target 'Movies' do
   use_frameworks!
 
   # Pods for Movies
-  pod 'Alamofire', '~> 4.5'
-  
+  pod 'Alamofire', '~> 5.5'
+  pod 'AlamofireImage', '~> 4.1'
 end

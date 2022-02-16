@@ -15,6 +15,7 @@ class DetalhesViewController: UIViewController {
   @IBOutlet weak var titulo: UILabel!
   @IBOutlet weak var rating: UILabel!
   @IBOutlet weak var sinopse: UILabel!
+  @IBOutlet weak var imgView: UIImageView!
   
   
     override func viewDidLoad() {
@@ -22,6 +23,11 @@ class DetalhesViewController: UIViewController {
       titulo.text = movie.title
       rating.text = String(movie.vote_average)
       sinopse.text = movie.overview
+      API.loadImages(parcialURL: movie.poster_path) { (image) in
+        if let image = image{
+          self.imgView.image = image
+        }
+      }
     }
     
 

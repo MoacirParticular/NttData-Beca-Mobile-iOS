@@ -52,6 +52,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="imgView" destination="wuM-Xy-QR6" id="0H0-vr-rC4"/>
                                     <outlet property="titulolabel" destination="WGr-MU-ItF" id="Cgl-LA-hp6"/>
                                     <segue destination="B9B-dD-UQB" kind="show" id="Pfz-3o-88A"/>
                                 </connections>
@@ -107,6 +108,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="KJl-76-vyf"/>
                     <connections>
+                        <outlet property="imgView" destination="woA-fE-WdU" id="sp9-sx-Gj9"/>
                         <outlet property="rating" destination="2hF-O2-HgL" id="fvN-CL-3eM"/>
                         <outlet property="sinopse" destination="gLe-pe-b5X" id="h9g-xf-Np8"/>
                         <outlet property="titulo" destination="iug-Hm-5iO" id="KJh-tb-kcW"/>

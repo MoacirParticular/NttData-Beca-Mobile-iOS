@@ -11,12 +11,11 @@ import Alamofire
 class ListaFilmesTableViewController: UITableViewController {
 
   var list: [Result] = []
-  
+  var images: [UIImage] = []
   
     override func viewDidLoad() {
         super.viewDidLoad()
         loadData()
-  
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -41,7 +40,7 @@ class ListaFilmesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PosterTableViewCell
         let movie = list[indexPath.row]
-      cell.preencheViews(result: movie)
+        cell.preencheViews(result: movie)
         return cell
     }
   
@@ -55,7 +54,7 @@ class ListaFilmesTableViewController: UITableViewController {
         }
       }
     }
-  
+    
   
   
     /*
