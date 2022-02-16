@@ -25,6 +25,7 @@ class PosterTableViewCell: UITableViewCell {
   
   func preencheViews(result: Result){
     titulolabel.text = result.title
+    
   }
 
 }

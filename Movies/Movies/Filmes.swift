@@ -12,7 +12,6 @@ struct Welcome: Codable {
     let page: Int
     let results: [Result]
     let total_pages, total_results: Int
-
 }
 
 // MARK: - Result

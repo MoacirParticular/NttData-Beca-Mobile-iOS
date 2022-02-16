@@ -18,9 +18,10 @@ class DetalhesViewController: UIViewController {
   
   
     override func viewDidLoad() {
-        super.viewDidLoad()
+      super.viewDidLoad()
       titulo.text = movie.title
-        
+      rating.text = String(movie.vote_average)
+      sinopse.text = movie.overview
     }
     
 
