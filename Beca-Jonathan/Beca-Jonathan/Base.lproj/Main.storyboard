@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sJI-Zo-pOg">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -10,19 +10,37 @@
         <!--Root View Controller-->
         <scene sceneID="f79-h2-7an">
             <objects>
-                <tableViewController id="Iue-SX-6pn" sceneMemberID="viewController">
+                <tableViewController id="Iue-SX-6pn" customClass="FilmesTableViewController" customModule="Beca_Jonathan" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="BB3-Xe-cFF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="kzE-ET-vzK">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="capa" rowHeight="310" id="kzE-ET-vzK" customClass="ImagemTableViewCell" customModule="Beca_Jonathan" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="375" height="310"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kzE-ET-vzK" id="Jud-mi-PDA">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="350.5" height="310"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cJ0-bI-FAi">
+                                            <rect key="frame" x="16" y="0.0" width="318.5" height="310"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="343" id="b3c-HK-2Kr"/>
+                                                <constraint firstAttribute="height" constant="310" id="efd-GT-AQ0"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="cJ0-bI-FAi" firstAttribute="top" secondItem="Jud-mi-PDA" secondAttribute="top" id="58K-fL-hEv"/>
+                                        <constraint firstItem="cJ0-bI-FAi" firstAttribute="leading" secondItem="Jud-mi-PDA" secondAttribute="leading" constant="16" id="EIe-VF-xdf"/>
+                                        <constraint firstAttribute="trailing" secondItem="cJ0-bI-FAi" secondAttribute="trailing" constant="16" id="fdk-M6-flh"/>
+                                        <constraint firstAttribute="bottom" secondItem="cJ0-bI-FAi" secondAttribute="bottom" id="jXz-Uu-4Ss"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imagemView" destination="cJ0-bI-FAi" id="oHd-fo-3pr"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -34,14 +52,14 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ltm-Xt-bVE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="990" y="106"/>
+            <point key="canvasLocation" x="989.60000000000002" y="105.69715142428787"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Quj-3d-OQC">
             <objects>
                 <navigationController id="sJI-Zo-pOg" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="YyO-FL-9IK">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

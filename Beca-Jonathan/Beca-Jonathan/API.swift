@@ -12,9 +12,9 @@ import AlamofireImage
 class API {
     
     static private let chave = "fa4df2b57bc0d39ee64e18b8234e409b"
-    static private let url = "https://api.themoviedb.org/3/trending/all/week?api_key=\(chave)&language=pt-BR"
+    static private let url = "https://api.themoviedb.org/3/trending/movie/week?api_key=\(chave)&language=pt-BR"
 
-    static private var urlImagem = "https://image.tmdb.org/t/p/w500"
+    
     
     class func carregandoFilmes(onComplete: @escaping (Geral?) -> Void){
        AF.request(url).responseJSON { (response) in
@@ -24,16 +24,17 @@ class API {
             onComplete(nil)
             return
         }
+           print(movieInfo.results)
         onComplete(movieInfo)
-        
     }
 }
 
-//class func loadingimages(parcialURL: String , onComplete: @escaping (UIImage?) -> Void){
-//    let path = urlImagem+parcialURL
-//    AF.request(path).responseImage { response in
-//        if case .sucess(let image) = response.result{
-//            onComplete(image)
-//        }
-//    }
+class func buscaImagens(parciaImagem: String , onComplete: @escaping (UIImage?) -> Void){
+        let path = "https://image.tmdb.org/t/p/w500" + parciaImagem
+        AF.request(path).responseImage { response in
+            if case .success (let image) = response.result{
+                onComplete(image)
+            }
+        }
+}
 }
