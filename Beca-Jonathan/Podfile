@@ -7,5 +7,6 @@ target 'Beca-Jonathan' do
 
   # Pods for Beca-Jonathan
 	pod 'Alamofire', '~> 5.5'
-
+  pod 'AlamofireImage', '~> 4.1'
+  
 end
