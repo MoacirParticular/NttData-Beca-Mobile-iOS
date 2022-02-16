@@ -14,12 +14,20 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        filmesTableView.dataSource = self
-        filmesTableView.delegate = self
+        
+       configuraTableView()
         
         view.backgroundColor = UIColor (red: 184.0/255.0, green: 246.0/255.0, blue: 223.0/255.0, alpha: 1) // HOME T V H?
     }
+    
+    func configuraTableView() {
+        filmesTableView.register(UINib(nibName: "FilmeTableViewCell", bundle: nil), forCellReuseIdentifier: "FilmeTableViewCell")
+        filmesTableView.dataSource = self
+        filmesTableView.delegate = self
+   }
+    
 }
+
 
 extension ViewController: UITableViewDataSource {
     
@@ -28,9 +36,11 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-                let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
-                cell.textLabel?.text = "filme \(indexPath.row)" // setei o título e o número da linha que o método tá passando no momento (essas linhas foram comentadas depois que instanciei a célula criada, pois essa aqui instanciava uma célula genérica)
-                return cell
+                
+        guard let celulaFilme = tableView.dequeueReusableCell(withIdentifier: "FilmeTableViewCell") as? FilmeTableViewCell else {
+            fatalError("error to create FilmeTableViewCell")
+        }
+                return celulaFilme
     }
 }
 
@@ -46,5 +56,9 @@ extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 300
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 400
     }
 }
