@@ -8,16 +8,18 @@
 import UIKit
 
 class DetalhesViewController: UIViewController {
-
-  var movie: Result!
   
+  //MARK: - Atributes
+  var movie: MovieDetails!
   
+  //MARK: - Outlets
   @IBOutlet weak var titulo: UILabel!
   @IBOutlet weak var rating: UILabel!
-  @IBOutlet weak var sinopse: UILabel!
+  @IBOutlet weak var sinopse: UITextView!
+  
   @IBOutlet weak var imgView: UIImageView!
   
-  
+  //MARK: - View LifeCycle
     override func viewDidLoad() {
       super.viewDidLoad()
       titulo.text = movie.title

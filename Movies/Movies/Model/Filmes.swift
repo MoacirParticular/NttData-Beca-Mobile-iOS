@@ -7,15 +7,15 @@
 
 import Foundation
 
-// MARK: - Welcome
-struct Welcome: Codable {
+// MARK: - ResponseAPI
+struct ResponseAPI: Codable {
     let page: Int
-    let results: [Result]
+    let results: [MovieDetails]
     let total_pages, total_results: Int
 }
 
-// MARK: - Result
-struct Result: Codable {
+// MARK: - MovieDetails
+struct MovieDetails: Codable {
     let overview: String
     let poster_path: String
     let title: String

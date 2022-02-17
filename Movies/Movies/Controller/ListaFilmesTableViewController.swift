@@ -10,13 +10,14 @@ import Alamofire
 
 class ListaFilmesTableViewController: UITableViewController {
 
-  var list: [Result] = []
+  //MARK: - Atributes
+  var list: [MovieDetails] = []
   var images: [UIImage] = []
   
+  //MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         loadData()
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
 
     // MARK: - Table view data source
@@ -26,20 +27,21 @@ class ListaFilmesTableViewController: UITableViewController {
     }
   
   
+  override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+      let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PosterTableViewCell
+      let movie = list[indexPath.row]
+      cell.preencheViews(result: movie)
+      return cell
+  }
+  
+  //MARK: - prepare
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     let controller = segue.destination as! DetalhesViewController
     let selectedRow = list[tableView.indexPathForSelectedRow!.row]
     controller.movie = selectedRow
   }
-  
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PosterTableViewCell
-        let movie = list[indexPath.row]
-        cell.preencheViews(result: movie)
-        return cell
-    }
-  
+
+  //MARK: - loadData
     func loadData(){
       API.loadMovies { (info) in
         if let info = info{
@@ -50,9 +52,5 @@ class ListaFilmesTableViewController: UITableViewController {
         }
       }
     }
-    
-  
-  
-    
 
 }
