@@ -24,6 +24,7 @@ class API{
           onComplete(nil)
           return
         }
+        print("nao deu certo")
       onComplete(movieInfo)
       }
   }
