@@ -20,7 +20,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tef-Ap-wOa" userLabel="BackgroundView">
                         <rect key="frame" x="10" y="10" width="300" height="380"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cartazReiLeao" translatesAutoresizingMaskIntoConstraints="NO" id="XOp-nj-30f">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XOp-nj-30f">
                                 <rect key="frame" x="0.0" y="0.0" width="300" height="380"/>
                             </imageView>
                         </subviews>
@@ -41,11 +41,14 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="backgroundViewCell" destination="Tef-Ap-wOa" id="dgT-ks-bXb"/>
+                <outlet property="filmeImage" destination="XOp-nj-30f" id="W6U-hv-VTv"/>
+            </connections>
             <point key="canvasLocation" x="132" y="110"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="cartazReiLeao" width="812" height="1200"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

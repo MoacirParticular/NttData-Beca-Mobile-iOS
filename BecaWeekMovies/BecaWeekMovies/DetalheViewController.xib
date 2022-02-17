@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetalheViewController" customModule="BecaWeekMovies" customModuleProvider="target">
+            <connections>
+                <outlet property="filmeImage" destination="dNI-lK-OM6" id="qq7-gC-85F"/>
+                <outlet property="ratingFilmeLabel" destination="ql6-UC-U8G" id="8Sx-D0-E53"/>
+                <outlet property="sinopseFilmeLabel" destination="4XN-XK-y6y" id="I0P-wm-NmJ"/>
+                <outlet property="tituloFilmeLabel" destination="VUT-xx-3zJ" id="vDe-fg-fS5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1AM-J4-5be">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dNI-lK-OM6" userLabel="Image Filme View">
+                            <rect key="frame" x="0.0" y="8" width="414" height="482"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cartazReiLeao" translatesAutoresizingMaskIntoConstraints="NO" id="HFB-xd-7rv">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="482"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vYq-fh-ehi">
+                                    <rect key="frame" x="21" y="36" width="25" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="25" id="6MH-IP-12g"/>
+                                        <constraint firstAttribute="height" constant="25" id="iSu-hv-HEh"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="icon"/>
+                                    <connections>
+                                        <action selector="botaoVoltar:" destination="-1" eventType="touchUpInside" id="Te5-W4-5rF"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="vYq-fh-ehi" firstAttribute="top" secondItem="dNI-lK-OM6" secondAttribute="top" constant="36" id="0kV-Zg-ScU"/>
+                                <constraint firstItem="vYq-fh-ehi" firstAttribute="leading" secondItem="dNI-lK-OM6" secondAttribute="leading" constant="21" id="Kgl-zR-o3Y"/>
+                                <constraint firstItem="HFB-xd-7rv" firstAttribute="leading" secondItem="dNI-lK-OM6" secondAttribute="leading" id="S54-mW-Wbd"/>
+                                <constraint firstAttribute="trailing" secondItem="HFB-xd-7rv" secondAttribute="trailing" id="eUf-Mo-g1O"/>
+                                <constraint firstAttribute="bottom" secondItem="HFB-xd-7rv" secondAttribute="bottom" id="fy3-3Z-nVW"/>
+                                <constraint firstItem="HFB-xd-7rv" firstAttribute="top" secondItem="dNI-lK-OM6" secondAttribute="top" id="wue-Ln-5iO"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="DSp-4K-jng">
+                            <rect key="frame" x="16" y="490" width="382" height="171.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título do filme" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUT-xx-3zJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="382" height="30.5"/>
+                                    <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="30"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ql6-UC-U8G">
+                                    <rect key="frame" x="0.0" y="77.5" width="382" height="23.5"/>
+                                    <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sinopse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4XN-XK-y6y">
+                                    <rect key="frame" x="0.0" y="148" width="382" height="23.5"/>
+                                    <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="DSp-4K-jng" secondAttribute="trailing" constant="16" id="0en-vW-Z7A"/>
+                        <constraint firstItem="dNI-lK-OM6" firstAttribute="top" secondItem="1AM-J4-5be" secondAttribute="top" constant="8" id="Bcr-Vk-mgz"/>
+                        <constraint firstAttribute="bottom" secondItem="DSp-4K-jng" secondAttribute="bottom" id="Cc5-VQ-vBC"/>
+                        <constraint firstItem="DSp-4K-jng" firstAttribute="leading" secondItem="1AM-J4-5be" secondAttribute="leading" constant="16" id="HIw-uH-SaR"/>
+                        <constraint firstItem="dNI-lK-OM6" firstAttribute="leading" secondItem="1AM-J4-5be" secondAttribute="leading" id="XkC-9N-6bR"/>
+                        <constraint firstItem="dNI-lK-OM6" firstAttribute="width" secondItem="1AM-J4-5be" secondAttribute="width" id="ZA3-12-nGY"/>
+                        <constraint firstItem="DSp-4K-jng" firstAttribute="top" secondItem="dNI-lK-OM6" secondAttribute="bottom" id="cIg-AS-7CY"/>
+                        <constraint firstAttribute="trailing" secondItem="dNI-lK-OM6" secondAttribute="trailing" id="dG8-6K-e9N"/>
+                        <constraint firstItem="dNI-lK-OM6" firstAttribute="height" secondItem="1AM-J4-5be" secondAttribute="height" multiplier="0.589242" id="uGO-B7-az2"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="1AM-J4-5be" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="H2g-rs-3Yt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="1AM-J4-5be" secondAttribute="bottom" id="Sh3-sL-fLG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1AM-J4-5be" secondAttribute="trailing" id="TSN-kn-OVF"/>
+                <constraint firstItem="1AM-J4-5be" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zF2-OF-yVw"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="109.82142857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cartazReiLeao" width="812" height="1200"/>
+        <image name="icon" width="50" height="50"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
