@@ -14,7 +14,7 @@ class API {
     static private let chave = "fa4df2b57bc0d39ee64e18b8234e409b"
     static private let url = "https://api.themoviedb.org/3/trending/movie/week?api_key=\(chave)&language=pt-BR"
 
-    
+    // MARK: CARREGANDO FILMES
     
     class func carregandoFilmes(onComplete: @escaping (Geral?) -> Void){
        AF.request(url).responseJSON { (response) in
@@ -28,6 +28,7 @@ class API {
         onComplete(movieInfo)
     }
 }
+    //MARK: BUSCAR IMAGENS
 
 class func buscaImagens(parciaImagem: String , onComplete: @escaping (UIImage?) -> Void){
         let path = "https://image.tmdb.org/t/p/w500" + parciaImagem

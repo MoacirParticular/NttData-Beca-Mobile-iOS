@@ -40,6 +40,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" systemColor="labelColor"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
                                     <outlet property="imagemView" destination="cJ0-bI-FAi" id="oHd-fo-3pr"/>
                                     <segue destination="9vZ-5Q-NVd" kind="show" id="W43-2U-FOu"/>
