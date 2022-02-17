@@ -8,14 +8,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
+  
 
     @IBOutlet weak var filmesTableView: UITableView!
     
+    var guardaFilme: [Resultados] = []
+    var carregaFilme = false
+    var total = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-       configuraTableView()
+        carregandoFilmes()
+        configuraTableView()
         
         view.backgroundColor = UIColor (red: 184.0/255.0, green: 246.0/255.0, blue: 223.0/255.0, alpha: 1) // HOME T V H?
     }
@@ -26,13 +30,27 @@ class ViewController: UIViewController {
         filmesTableView.delegate = self
    }
     
+    func carregandoFilmes() {
+        carregaFilme = true
+        API.carregandoFilmes { (informacao) in
+            if let informacao = informacao {
+                self.guardaFilme += informacao.results
+                print(self.carregaFilme)
+                DispatchQueue.main.async {
+                    self.filmesTableView.reloadData()
+                }
+            }
+        }
+    }
+
+    
 }
 
 
 extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return guardaFilme.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -40,6 +58,8 @@ extension ViewController: UITableViewDataSource {
         guard let celulaFilme = tableView.dequeueReusableCell(withIdentifier: "FilmeTableViewCell") as? FilmeTableViewCell else {
             fatalError("error to create FilmeTableViewCell")
         }
+                
+        celulaFilme.dados(guardaFilme[indexPath.row])
                 return celulaFilme
     }
 }
@@ -50,6 +70,9 @@ extension ViewController: UITableViewDelegate {
         let detalheController = DetalheViewController(nibName: "DetalheViewController", bundle: nil)
         
         navigationController?.pushViewController(detalheController, animated: true)
+        
+        detalheController.carregaDetalhe = guardaFilme[tableView.indexPathForSelectedRow!.row]
+        
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetalheViewController" customModule="BecaWeekMovies" customModuleProvider="target">
             <connections>
-                <outlet property="filmeImage" destination="dNI-lK-OM6" id="qq7-gC-85F"/>
+                <outlet property="filmeImage" destination="HFB-xd-7rv" id="03Y-jL-4ec"/>
                 <outlet property="ratingFilmeLabel" destination="ql6-UC-U8G" id="8Sx-D0-E53"/>
                 <outlet property="sinopseFilmeLabel" destination="4XN-XK-y6y" id="I0P-wm-NmJ"/>
                 <outlet property="tituloFilmeLabel" destination="VUT-xx-3zJ" id="vDe-fg-fS5"/>
@@ -69,7 +69,7 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sinopse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4XN-XK-y6y">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sinopse" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4XN-XK-y6y">
                                     <rect key="frame" x="0.0" y="148" width="382" height="23.5"/>
                                     <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="20"/>
                                     <nil key="textColor"/>
