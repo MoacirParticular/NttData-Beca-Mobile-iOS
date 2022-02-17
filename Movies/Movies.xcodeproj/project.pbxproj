@@ -67,6 +67,43 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F81E934F27BDEB5600F16F3A /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				F879C66327BA957E00D94D06 /* SceneDelegate.swift */,
+				F879C66127BA957E00D94D06 /* AppDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		F81E935027BDEBC000F16F3A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F879C66727BA957E00D94D06 /* Main.storyboard */,
+				F879C68327BB04C600D94D06 /* PosterTableViewCell.swift */,
+				F879C66C27BA958000D94D06 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F81E935227BDEBFE00F16F3A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F879C67527BA9FA500D94D06 /* DetalhesViewController.swift */,
+				F879C67727BA9FD100D94D06 /* ListaFilmesTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F81E935327BDEC3300F16F3A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F879C67D27BAED3B00D94D06 /* API.swift */,
+				F879C67F27BAEDA600D94D06 /* Filmes.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F879C65527BA957E00D94D06 = {
 			isa = PBXGroup;
 			children = (
@@ -88,17 +125,12 @@
 		F879C66027BA957E00D94D06 /* Movies */ = {
 			isa = PBXGroup;
 			children = (
-				F879C66127BA957E00D94D06 /* AppDelegate.swift */,
-				F879C66327BA957E00D94D06 /* SceneDelegate.swift */,
-				F879C66727BA957E00D94D06 /* Main.storyboard */,
-				F879C68327BB04C600D94D06 /* PosterTableViewCell.swift */,
-				F879C67527BA9FA500D94D06 /* DetalhesViewController.swift */,
-				F879C67727BA9FD100D94D06 /* ListaFilmesTableViewController.swift */,
+				F81E935327BDEC3300F16F3A /* Model */,
+				F81E934F27BDEB5600F16F3A /* Delegate */,
+				F81E935027BDEBC000F16F3A /* View */,
+				F81E935227BDEBFE00F16F3A /* Controller */,
 				F879C66A27BA958000D94D06 /* Assets.xcassets */,
-				F879C66C27BA958000D94D06 /* LaunchScreen.storyboard */,
 				F879C66F27BA958000D94D06 /* Info.plist */,
-				F879C67D27BAED3B00D94D06 /* API.swift */,
-				F879C67F27BAEDA600D94D06 /* Filmes.swift */,
 			);
 			path = Movies;
 			sourceTree = "<group>";
