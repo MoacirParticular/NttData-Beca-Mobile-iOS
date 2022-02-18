@@ -20,8 +20,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         carregandoFilmes()
         configuraTableView()
-        
-        view.backgroundColor = UIColor (red: 184.0/255.0, green: 246.0/255.0, blue: 223.0/255.0, alpha: 1) // HOME T V H?
     }
     
     func configuraTableView() {
@@ -42,10 +40,7 @@ class ViewController: UIViewController {
             }
         }
     }
-
-    
 }
-
 
 extension ViewController: UITableViewDataSource {
     
@@ -72,7 +67,6 @@ extension ViewController: UITableViewDelegate {
         navigationController?.pushViewController(detalheController, animated: true)
         
         detalheController.carregaDetalhe = guardaFilme[tableView.indexPathForSelectedRow!.row]
-        
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -80,13 +74,12 @@ extension ViewController: UITableViewDelegate {
         let headerView = Bundle.main.loadNibNamed("HomeTableViewHeader", owner: self, options: nil)?.first as? HomeTableViewHeader
         
         return headerView
-        
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 300
+        return 270
     }
-    
+
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 400
     }

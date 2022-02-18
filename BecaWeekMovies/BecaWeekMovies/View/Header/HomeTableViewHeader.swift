@@ -15,7 +15,4 @@ class HomeTableViewHeader: UIView {
     @IBOutlet weak var subtituloLabel: UILabel!
     @IBOutlet weak var headerImageView: UIImageView!
     
-    // n coloquei 
-    
-
 }

@@ -47,6 +47,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GEL-Jt-MBP"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="filmesTableView" destination="bIO-Gd-0eW" id="fg0-hm-RBt"/>
                     </connections>

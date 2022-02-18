@@ -33,7 +33,6 @@ class DetalheViewController: UIViewController {
                 self.filmeImage.image = imagemDeCapa
             }
         }
-        
     }
     
     // MARK: - Actions
@@ -41,5 +40,4 @@ class DetalheViewController: UIViewController {
     @IBAction func botaoVoltar(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }
-    
 }

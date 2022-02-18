@@ -62,10 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				34CC14E327BAA77600F9C256 /* Main.storyboard */,
-				34CC14E127BAA77600F9C256 /* ViewController.swift */,
+				34CC150F27BD65CD00F9C256 /* DetalheViewController.xib */,
 				34A20D9927BE7DFB00FF4A26 /* Cells */,
 				34A20D9A27BE7E1900FF4A26 /* Header */,
-				34A20D9B27BE7E3900FF4A26 /* Detalhes */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -88,15 +87,6 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
-		34A20D9B27BE7E3900FF4A26 /* Detalhes */ = {
-			isa = PBXGroup;
-			children = (
-				34CC150E27BD65CD00F9C256 /* DetalheViewController.swift */,
-				34CC150F27BD65CD00F9C256 /* DetalheViewController.xib */,
-			);
-			path = Detalhes;
-			sourceTree = "<group>";
-		};
 		34A20D9C27BE7E6100FF4A26 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +103,15 @@
 				34A20DA027BE81E600FF4A26 /* MovieResponse.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		34AA45C427BF2E42008BB053 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				34CC14E127BAA77600F9C256 /* ViewController.swift */,
+				34CC150E27BD65CD00F9C256 /* DetalheViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		34CC14D127BAA77600F9C256 = {
@@ -136,9 +135,10 @@
 		34CC14DC27BAA77600F9C256 /* BecaWeekMovies */ = {
 			isa = PBXGroup;
 			children = (
-				34A20D9D27BE7E7B00FF4A26 /* Model */,
 				34A20D9C27BE7E6100FF4A26 /* AppDelegate */,
+				34A20D9D27BE7E7B00FF4A26 /* Model */,
 				34A20D9827BE7DD200FF4A26 /* View */,
+				34AA45C427BF2E42008BB053 /* Controller */,
 				34CC14E627BAA77800F9C256 /* Assets.xcassets */,
 				34CC14E827BAA77800F9C256 /* LaunchScreen.storyboard */,
 				34CC14EB27BAA77800F9C256 /* Info.plist */,

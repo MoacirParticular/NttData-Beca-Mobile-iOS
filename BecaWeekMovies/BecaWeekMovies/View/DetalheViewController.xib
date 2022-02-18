@@ -55,29 +55,30 @@
                             </constraints>
                         </view>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="DSp-4K-jng">
-                            <rect key="frame" x="16" y="490" width="382" height="171.5"/>
+                            <rect key="frame" x="16" y="490" width="382" height="162"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título do filme" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUT-xx-3zJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="382" height="30.5"/>
-                                    <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="30"/>
-                                    <nil key="textColor"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título do filme" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUT-xx-3zJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="382" height="28"/>
+                                    <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="28"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ql6-UC-U8G">
-                                    <rect key="frame" x="0.0" y="77.5" width="382" height="23.5"/>
-                                    <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="20"/>
-                                    <nil key="textColor"/>
+                                    <rect key="frame" x="0.0" y="75" width="382" height="20"/>
+                                    <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="20"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sinopse" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4XN-XK-y6y">
-                                    <rect key="frame" x="0.0" y="148" width="382" height="23.5"/>
-                                    <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="20"/>
-                                    <nil key="textColor"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sinopse" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4XN-XK-y6y">
+                                    <rect key="frame" x="0.0" y="142" width="382" height="20"/>
+                                    <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="20"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
                         </stackView>
                     </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="DSp-4K-jng" secondAttribute="trailing" constant="16" id="0en-vW-Z7A"/>
                         <constraint firstItem="dNI-lK-OM6" firstAttribute="top" secondItem="1AM-J4-5be" secondAttribute="top" constant="8" id="Bcr-Vk-mgz"/>
@@ -92,7 +93,7 @@
                 </scrollView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="1AM-J4-5be" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="H2g-rs-3Yt"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="1AM-J4-5be" secondAttribute="bottom" id="Sh3-sL-fLG"/>
