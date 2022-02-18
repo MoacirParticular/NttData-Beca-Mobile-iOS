@@ -27,11 +27,11 @@ class DetalhesViewController: UIViewController {
         
         //Infomacoes da tela de detahes
         tituloFilme.text = pegaFilmes.title
-        dataDeLancamento.text = pegaFilmes.release_date
+        dataDeLancamento.text = "\(pegaFilmes.release_date)"
         resumo.text = pegaFilmes.overview
-        idiomaFilme.text = "\(pegaFilmes.original_language)"
-        idDoFilme.text = "\(pegaFilmes?.id ?? 0)"
-        votosDoPovo.text = "\(pegaFilmes.vote_average)"
+        idiomaFilme.text = "Idioma: \(pegaFilmes.original_language)"
+        idDoFilme.text = "ID: \(pegaFilmes?.id ?? 0)"
+        votosDoPovo.text = "Votos: \(pegaFilmes.vote_average)"
 
       
         //Pega imagens da api
