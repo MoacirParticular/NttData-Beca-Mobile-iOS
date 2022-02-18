@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE36685E27BF21300002023A /* ClassesFilmes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE36685D27BF21300002023A /* ClassesFilmes.swift */; };
 		BEBE53F727BA82D30007500D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBE53F627BA82D30007500D /* AppDelegate.swift */; };
 		BEBE53F927BA82D30007500D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBE53F827BA82D30007500D /* SceneDelegate.swift */; };
 		BEBE53FB27BA82D30007500D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBE53FA27BA82D30007500D /* ViewController.swift */; };
@@ -21,7 +22,6 @@
 		BEBE544827BADC8A0007500D /* DetalhesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBE544627BADC8A0007500D /* DetalhesViewController.swift */; };
 		BEBE544927BADC8A0007500D /* DetalhesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEBE544727BADC8A0007500D /* DetalhesViewController.xib */; };
 		BEBE544B27BB19840007500D /* FilmesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBE544A27BB19840007500D /* FilmesAPI.swift */; };
-		BEBE544E27BB19A20007500D /* ClassesFilmes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBE544D27BB19A20007500D /* ClassesFilmes.swift */; };
 		EC505337F8BD54F8B69E1456 /* Pods_AppDeFilmes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4918C613894C849AEED852AB /* Pods_AppDeFilmes.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +46,7 @@
 		4918C613894C849AEED852AB /* Pods_AppDeFilmes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppDeFilmes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A638D389033F5A8D781EAFB /* Pods-AppDeFilmes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppDeFilmes.release.xcconfig"; path = "Target Support Files/Pods-AppDeFilmes/Pods-AppDeFilmes.release.xcconfig"; sourceTree = "<group>"; };
 		67E37670318ECD41EAA58934 /* Pods-AppDeFilmes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppDeFilmes.debug.xcconfig"; path = "Target Support Files/Pods-AppDeFilmes/Pods-AppDeFilmes.debug.xcconfig"; sourceTree = "<group>"; };
+		BE36685D27BF21300002023A /* ClassesFilmes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesFilmes.swift; sourceTree = "<group>"; };
 		BEBE53F327BA82D30007500D /* AppDeFilmes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppDeFilmes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEBE53F627BA82D30007500D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEBE53F827BA82D30007500D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,7 +65,6 @@
 		BEBE544627BADC8A0007500D /* DetalhesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesViewController.swift; sourceTree = "<group>"; };
 		BEBE544727BADC8A0007500D /* DetalhesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetalhesViewController.xib; sourceTree = "<group>"; };
 		BEBE544A27BB19840007500D /* FilmesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmesAPI.swift; sourceTree = "<group>"; };
-		BEBE544D27BB19A20007500D /* ClassesFilmes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ClassesFilmes.swift; path = ../../../../Documents/ClassesFilmes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,7 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				BEBE544A27BB19840007500D /* FilmesAPI.swift */,
-				BEBE544D27BB19A20007500D /* ClassesFilmes.swift */,
+				BE36685D27BF21300002023A /* ClassesFilmes.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -380,7 +380,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEBE544827BADC8A0007500D /* DetalhesViewController.swift in Sources */,
-				BEBE544E27BB19A20007500D /* ClassesFilmes.swift in Sources */,
+				BE36685E27BF21300002023A /* ClassesFilmes.swift in Sources */,
 				BEBE53FB27BA82D30007500D /* ViewController.swift in Sources */,
 				BEBE53F727BA82D30007500D /* AppDelegate.swift in Sources */,
 				BEBE542E27BA8FED0007500D /* HomeTableViewHeader.swift in Sources */,

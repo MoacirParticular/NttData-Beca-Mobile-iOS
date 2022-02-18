@@ -41,4 +41,12 @@ class DetalhesViewController: UIViewController {
             }
         }
     }
+    
+    //MARK: - ACTIONS
+    
+    @IBAction func botaoVoltar(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+    }
+    
+    
 }

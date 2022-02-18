@@ -29,7 +29,7 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Uh-EX-Y4N" userLabel="Filme Imagem View">
                             <rect key="frame" x="72" y="50" width="264.5" height="426.5"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="o-poster-mostra-peter-parker-e-doutor-estranho-lutando-contra-os-viloes-dos-homem-aranha-antigos-1637010597234_v2_1x1" translatesAutoresizingMaskIntoConstraints="NO" id="4hW-H6-0qi">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="o-poster-mostra-peter-parker-e-doutor-estranho-lutando-contra-os-viloes-dos-homem-aranha-antigos-1637010597234_v2_1x1" translatesAutoresizingMaskIntoConstraints="NO" id="4hW-H6-0qi">
                                     <rect key="frame" x="0.0" y="0.0" width="264.5" height="426.5"/>
                                 </imageView>
                             </subviews>
@@ -197,6 +197,14 @@
                                 <constraint firstAttribute="trailing" secondItem="atF-lL-PXS" secondAttribute="trailing" id="lzQ-Ce-Cee"/>
                             </constraints>
                         </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4y-Al-Jzc">
+                            <rect key="frame" x="10" y="10" width="62" height="31"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Voltar"/>
+                            <connections>
+                                <action selector="botaoVoltar:" destination="-1" eventType="touchUpInside" id="zu5-0E-MoE"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
@@ -206,9 +214,11 @@
                         <constraint firstItem="7Uh-EX-Y4N" firstAttribute="width" secondItem="TkE-FB-CnW" secondAttribute="width" multiplier="0.552174" constant="36" id="M9x-9m-Vxj"/>
                         <constraint firstAttribute="bottom" secondItem="bvx-df-jkN" secondAttribute="bottom" id="PQ7-NG-uSl"/>
                         <constraint firstAttribute="height" secondItem="bvx-df-jkN" secondAttribute="height" multiplier="2.4773" constant="1" id="Zev-cj-vmm"/>
+                        <constraint firstItem="K4y-Al-Jzc" firstAttribute="leading" secondItem="TkE-FB-CnW" secondAttribute="leading" constant="10" id="eKo-1M-vsv"/>
                         <constraint firstItem="7Uh-EX-Y4N" firstAttribute="top" secondItem="TkE-FB-CnW" secondAttribute="top" constant="50" id="f0o-p9-yCR"/>
                         <constraint firstAttribute="trailing" secondItem="bvx-df-jkN" secondAttribute="trailing" constant="16" id="fEB-TB-06T"/>
                         <constraint firstItem="bvx-df-jkN" firstAttribute="top" secondItem="7Uh-EX-Y4N" secondAttribute="bottom" constant="35" id="i7O-dJ-TEP"/>
+                        <constraint firstItem="K4y-Al-Jzc" firstAttribute="top" secondItem="TkE-FB-CnW" secondAttribute="top" constant="10" id="pCE-A0-2w8"/>
                         <constraint firstItem="bvx-df-jkN" firstAttribute="leading" secondItem="TkE-FB-CnW" secondAttribute="leading" constant="16" id="sAl-tR-zV5"/>
                     </constraints>
                 </scrollView>

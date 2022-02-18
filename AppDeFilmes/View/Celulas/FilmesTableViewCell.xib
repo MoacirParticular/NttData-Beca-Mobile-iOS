@@ -31,7 +31,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="o-poster-mostra-peter-parker-e-doutor-estranho-lutando-contra-os-viloes-dos-homem-aranha-antigos-1637010597234_v2_1x1" translatesAutoresizingMaskIntoConstraints="NO" id="uS2-d2-0di">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="o-poster-mostra-peter-parker-e-doutor-estranho-lutando-contra-os-viloes-dos-homem-aranha-antigos-1637010597234_v2_1x1" translatesAutoresizingMaskIntoConstraints="NO" id="uS2-d2-0di">
                                 <rect key="frame" x="10" y="10" width="107" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="107" id="s4S-DD-3Ed"/>
